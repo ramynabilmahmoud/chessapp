@@ -87,7 +87,7 @@ class ChessBoardLayout extends StatelessWidget {
                   alignment: WrapAlignment.center,
                   spacing: 12,
                   children:
-                      ['R', 'N', 'Q', 'P'].map((piece) {
+                      ['R', 'N', 'B', 'Q', 'P'].map((piece) {
                         return Draggable<String>(
                           data: piece,
                           onDragStarted: () => onNewPieceDrag(piece),
@@ -108,7 +108,7 @@ class ChessBoardLayout extends StatelessWidget {
                   alignment: WrapAlignment.center,
                   spacing: 12,
                   children:
-                      ['r', 'n', 'q', 'p'].map((piece) {
+                      ['r', 'n', 'b', 'q', 'p'].map((piece) {
                         return Draggable<String>(
                           data: piece,
                           onDragStarted: () => onNewPieceDrag(piece),
